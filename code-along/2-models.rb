@@ -22,10 +22,30 @@ new_company["name"] = "Apple"
 new_company ["city"] = "Cupertino"
 new_company ["state"] = "CA"
 new_company ["url"] = "https://apple.com"
-p new_company
+# p new_company
+new_company.save
+# p new_company
+#puts "Companies: #{Company.all.count}"
 
+new_company2 = Company.new
 
+new_company2["name"] = "Amazon"
+new_company2["city"] = "Seattle"
+new_company2 ["state"] = "WA"
+new_company2 ["url"] = "https:/amazon.com"
+new_company2.save
+
+new_company3= Company.new
+new_company3["name"] = "Anthropic"
+new_company3["city"] = "SF"
+new_company3["state"] = "CA"
+new_company3["url"] = "https:/anthropic.com"
+
+new_company3.save
+
+puts "companies: #{Company.all.count}"
 # 3. query companies table to find all row with California company
+
 
 # 4. query companies table to find single row for Apple
 
