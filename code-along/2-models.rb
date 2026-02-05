@@ -54,3 +54,5 @@ puts "companies: #{Company.all.count}"
 # 6. update a row's column value
 
 # 7. delete a row
+# apple.destroy
+
